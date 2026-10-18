@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Chipa Andorra</title>
+  <meta name="description" content="Chipa artesanal congelada, hecha en Andorra. Crujiente por fuera, esponjosa por dentro. Pide por WhatsApp.">
+  <meta property="og:title" content="Casa Chipa Andorra">
+  <meta property="og:description" content="Chipa artesanal congelada, hecha en Andorra. Del congelador a tu mesa en 20 minutos.">
+  <meta property="og:image" content="assets/hero-chipa.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { var t = localStorage.getItem('cc-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#top" data-i18n="nav.skip">Saltar al contenido</a>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Casa Chipa Andorra">
+    <svg class="brand-mark" viewBox="0 0 48 22" aria-hidden="true"><path d="M2 20 L14 5 L21 13 L27 3 L46 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 9 L14 5 L17 9" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+    <span class="brand-text"><span class="brand-casa">Casa</span><span class="brand-chipa">Chipa</span></span>
+  </a>
+  <nav class="site-nav" aria-label="Principal">
+    <a href="#producto" data-i18n="nav.product">La chipa</a>
+    <a href="#hornear" data-i18n="nav.bake">Cómo prepararla</a>
+    <a href="#abuela" data-i18n="nav.story">Nuestra historia</a>
+  </nav>
+  <div class="controls">
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="ca" aria-pressed="false">CA</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></g></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.kicker">Raíces paraguayas. Hecha en Andorra.</span></p>
+      <h1 class="hero-title" data-i18n="hero.title">Crujiente por fuera, esponjosa por dentro.</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Chipa artesanal, horneada en Andorra. Llega congelada, se hornea en casa y se come caliente.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#pedir"><span data-i18n="hero.cta">Pedir por WhatsApp</span><span aria-hidden="true">↗</span></a>
+        <a class="btn btn-quiet" href="#que-es" data-i18n="hero.more">¿Qué es la chipa?</a>
+      </div>
+      <p class="hero-note" data-i18n="hero.note">Hecha a mano · 12 chipas por bolsa · A tu horno</p>
+    </div>
+    <figure class="hero-figure">
+      <img src="assets/hero-chipa.jpg" width="1024" height="680" alt="Una chipa recién horneada sobre una tabla de piedra" fetchpriority="high">
+      <figcaption class="hero-caption"><span data-i18n="hero.caption">Un poquito de Paraguay, en casa.</span><span aria-hidden="true">♡</span></figcaption>
+    </figure>
+  </section>
+  <div class="promise-strip">
+    <span data-i18n="badge.natural">Ingredientes naturales</span><span aria-hidden="true">✳</span>
+    <span data-i18n="badge.noPreserv">Sin conservantes</span><span aria-hidden="true">✳</span>
+    <span data-i18n="badge.andorra">Hecho en Andorra</span>
+  </div>
+
+  <!-- PRODUCT -->
+  <section class="product" id="producto">
+    <figure class="product-figure">
+      <img src="assets/bag.jpg" width="300" height="300" alt="Bolsa de Chipa Original" loading="lazy">
+    </figure>
+    <div class="product-text">
+      <p class="product-kicker" data-i18n="product.kicker">Lo que vendemos</p>
+      <h2>Chipa Original</h2>
+      <p class="product-price"><span data-price></span> <span class="product-unit" data-i18n="product.unit">· bolsa de 12 unidades, congeladas</span></p>
+      <p data-i18n="product.desc">Doce chipas listas para el horno. Guárdalas en el congelador y hornea las que quieras, cuando quieras. Aguantan tres meses congeladas, aunque no suelen durar tanto.</p>
+      <dl class="product-facts">
+        <div><dt data-i18n="product.f1k">Ingredientes</dt><dd data-i18n="product.f1v">Almidón de mandioca, queso, huevo, leche, mantequilla, sal.</dd></div>
+        <div><dt data-i18n="product.f2k">Sin</dt><dd data-i18n="product.f2v">Gluten, conservantes ni colorantes.</dd></div>
+        <div><dt data-i18n="product.f3k">Conservación</dt><dd data-i18n="product.f3v">Congelador, hasta 3 meses.</dd></div>
+      </dl>
+      <a class="btn btn-primary" href="#pedir" data-i18n="product.cta">Pedir una bolsa</a>
+    </div>
+  </section>
+
+  <!-- FREEZER TO TABLE -->
+  <section class="steps" id="hornear">
+    <h2 data-i18n="steps.title">Del congelador a tu mesa en 20 minutos.</h2>
+    <ol class="steps-list">
+      <li>
+        <span class="step-n">1</span>
+        <h3 data-i18n="steps.s1t">Precalienta</h3>
+        <p data-i18n="steps.s1p">Horno a 180 °C, calor arriba y abajo. Sin ventilador si puedes.</p>
+      </li>
+      <li>
+        <span class="step-n">2</span>
+        <h3 data-i18n="steps.s2t">Hornea desde congelado</h3>
+        <p data-i18n="steps.s2p">Sin descongelar. Sobre papel de horno, con espacio entre ellas. 20 a 25 minutos, hasta que estén doradas.</p>
+      </li>
+      <li>
+        <span class="step-n">3</span>
+        <h3 data-i18n="steps.s3t">Come caliente</h3>
+        <p data-i18n="steps.s3p">Espera dos minutos y ábrela. El queso tiene que estirarse.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- WHAT IS CHIPA -->
+  <section class="story" id="que-es">
+    <div class="story-text">
+      <h2 data-i18n="what.title">Pan de queso, a la paraguaya.</h2>
+      <p data-i18n="what.p1">La chipa es un panecillo de almidón de mandioca y queso que se come en Paraguay desde hace siglos. Sin harina de trigo, sin levadura, sin trucos: se hincha en el horno y queda dorada por fuera y elástica por dentro.</p>
+      <p data-i18n="what.p2">Nosotros la hacemos con la receta de siempre, a mano, en Andorra. Y la congelamos en el momento justo para que la hornees tú y la comas como tiene que comerse: recién salida del horno.</p>
+      <ul class="badges">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-8 5-13 14-14-1 9-6 14-14 14z M4 20l8-8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span data-i18n="badge.natural">Ingredientes naturales</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l4 4-4 12-4-12z M8 8h8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span data-i18n="badge.noPreserv">Sin conservantes</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20l7-10 4 5 3-4 6 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span data-i18n="badge.andorra">Hecho en Andorra</span></li>
+      </ul>
+    </div>
+    <figure class="story-figure">
+      <img src="assets/closeup.jpg" width="330" height="340" alt="Chipa partida por la mitad con el queso estirándose" loading="lazy">
+    </figure>
+  </section>
+
+  <!-- PATTERN BAND -->
+  <div class="band" role="presentation" style="background-image:url('assets/pattern.jpg')">
+    <p class="band-quote" data-i18n="band">Pequeños placeres, grandes historias.</p>
+  </div>
+
+
+  <!-- ABUELA ISABEL -->
+  <section class="abuela" id="abuela">
+    <div class="abuela-story">
+      <p class="abuela-kicker" data-i18n="abuela.kicker">La receta de la familia</p>
+      <h2 data-i18n="abuela.title">La chipa de la abuela Isabel.</h2>
+      <p data-i18n="abuela.p1">Cada chipa que sale de nuestro horno empieza en Paraguay, en la cocina de la abuela Isabel. Allí se hacían dos cosas con almidón de mandioca y queso: mbeju, esa torta fina que se dora en la sartén, y chipa, la que se hincha en el horno y llena la casa de olor.</p>
+      <p data-i18n="abuela.p2">Nunca escribió la receta. La enseñó con las manos: cuánto queso, cuándo parar de amasar, cómo saber que están listas por el olor. Esa es la receta que seguimos hoy, en Andorra, a un océano de distancia de su cocina. Empezamos por la chipa. El mbeju, algún día.</p>
+      <blockquote class="abuela-quote">
+        <p data-i18n="abuela.quote">La chipa se hace con queso bueno y sin prisa. Lo demás es cariño.</p>
+        <cite data-i18n="abuela.cite">Abuela Isabel</cite>
+      </blockquote>
+    </div>
+
+    <div class="recipe-card">
+      <p class="recipe-card-title" data-i18n="recipe.title">Como se come en su casa</p>
+      <ul class="recipe-list">
+        <li>
+          <h3 data-i18n="recipe.r1t">Con cocido para desayunar</h3>
+          <p data-i18n="recipe.r1p">Yerba mate hervida con azúcar quemado y un chorro de leche. Chipa caliente al lado, para mojar.</p>
+        </li>
+        <li>
+          <h3 data-i18n="recipe.r2t">Con tereré a media tarde</h3>
+          <p data-i18n="recipe.r2p">Mate frío con hielo y hierbas, como se toma en Paraguay. La chipa de la mañana, dos minutos al horno, vuelve a quedar crujiente.</p>
+        </li>
+        <li>
+          <h3 data-i18n="recipe.r3t">Recién salida, sin nada más</h3>
+          <p data-i18n="recipe.r3p">Como la comía ella: partida en caliente, con el queso estirándose. La chipa buena no necesita acompañamiento.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="order" id="pedir">
+    <div class="order-text">
+      <h2 data-i18n="order.title">Pide por WhatsApp.</h2>
+      <p data-i18n="order.p">Elige cuántas bolsas quieres y cómo las recibes. Al pulsar el botón se abre WhatsApp con el mensaje ya escrito; solo tienes que enviarlo y te confirmamos.</p>
+
+      <form class="order-form" id="orderForm">
+        <fieldset class="qty">
+          <legend data-i18n="order.qty">Bolsas</legend>
+          <div class="qty-control">
+            <button type="button" class="qty-btn" data-delta="-1" aria-label="Menos">−</button>
+            <output id="qtyOut" aria-live="polite">1</output>
+            <button type="button" class="qty-btn" data-delta="1" aria-label="Más">+</button>
+          </div>
+          <p class="qty-hint"><span data-i18n="order.each">12 unidades por bolsa</span> · <span data-total></span></p>
+        </fieldset>
+
+        <fieldset class="mode">
+          <legend data-i18n="order.how">¿Cómo lo recibes?</legend>
+          <label><input type="radio" name="mode" value="pickup" checked><span data-i18n="order.pickup">Lo recojo yo</span></label>
+          <label><input type="radio" name="mode" value="delivery" aria-describedby="deliveryHint"><span data-i18n="order.delivery">Entrega a domicilio en Andorra</span></label>
+          <p class="mode-hint" id="deliveryHint"></p>
+        </fieldset>
+
+        <a class="btn btn-whatsapp" id="waLink" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c0 3 2.5 5.5 5.5 6.5l1.5-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z" fill="currentColor"/></svg>
+          <span data-i18n="order.cta">Enviar pedido por WhatsApp</span>
+        </a>
+      </form>
+    </div>
+
+    <div class="chat" aria-live="polite">
+      <p class="chat-label" data-i18n="order.preview">Así quedará tu mensaje</p>
+      <div class="chat-bubble" id="chatBubble"></div>
+      <p class="chat-foot" data-i18n="order.foot">Te respondemos para confirmar fecha y precio total.</p>
+    </div>
+  </section>
+
+  <!-- ANDORRA -->
+  <section class="place">
+    <figure class="place-figure">
+      <img src="assets/andorra.jpg" width="960" height="720" alt="Vall d'Incles, los Pirineos de Andorra" loading="lazy">
+    </figure>
+    <div class="place-text">
+      <h2 data-i18n="place.title">Hecho con alma en Andorra.</h2>
+      <p data-i18n="place.p">Casa Chipa nace en el Pirineo con una receta que viene de muy lejos. Cada tanda se amasa a mano, en pequeñas cantidades, para que llegue a tu casa como si la hubieras hecho tú.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <span class="lockup-casa">Casa</span> <span class="lockup-chipa">Chipa</span> <span class="lockup-place">Andorra</span>
+  </div>
+  <p class="footer-line" data-i18n="footer.line">Tradición que se disfruta siempre.</p>
+  <div class="footer-links">
+    <a id="igLink" href="#" rel="noopener" target="_blank">Instagram</a>
+    <a id="waFooter" href="#" rel="noopener" target="_blank">WhatsApp</a>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> Casa Chipa Andorra</p>
+</footer>
+
+<aside class="mobile-order" aria-label="Chipa Original">
+  <div><span class="mobile-order-name">Chipa Original</span><span><strong data-price></strong><span class="mobile-order-unit" data-i18n="order.each">12 unidades por bolsa</span></span></div>
+  <a class="btn btn-primary" href="#pedir"><span data-i18n="nav.order">Pedir</span><span aria-hidden="true">↗</span></a>
+</aside>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
