@@ -12,7 +12,7 @@ Open `app.js` and change the three values at the top:
 
 ## Editing text
 
-All copy lives in `i18n.js`, one block per language (es, ca, en).
+All copy lives in `i18n.js`, one block per language (es, ca, en, fr).
 Change a sentence there and it updates on the page.
 
 ## Running locally

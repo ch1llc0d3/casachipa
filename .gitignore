@@ -430,3 +430,6 @@ FodyWeavers.xsd
 # Vercel
 .vercel
 .env*
+
+# Isolated development worktrees
+.worktrees/

@@ -42,6 +42,7 @@ function waUrl(text) {
 function render() {
   // Static strings
   $$('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  $$('[data-i18n-alt]').forEach(el => { el.alt = t(el.dataset.i18nAlt); });
   document.documentElement.lang = state.lang;
   $('meta[name="description"]').setAttribute('content', t('meta.desc'));
 

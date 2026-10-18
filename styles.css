@@ -225,6 +225,13 @@ legend { font-weight:500; padding:0; margin-bottom:.7rem; }
   .hero-actions { flex-direction:column; align-items:stretch; }
   .mobile-order { padding-inline:1rem; gap:.5rem; }
   .mobile-order-unit { display:block; margin-left:0; }
+  .mobile-order .btn { padding-inline:.85rem; gap:.6rem; font-size:.85rem; }
+}
+@media(max-width:380px) {
+  .topbar { column-gap:.5rem; }
+  .brand-mark { display:none; }
+  .brand-casa { font-size:.6rem; }
+  .brand-chipa { font-size:1.2rem; }
 }
 @media(prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
